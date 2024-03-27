@@ -27,12 +27,12 @@ public class LibraryDatabase {
 	private List<Customer> customerList = new ArrayList<>();
 	private List<IssuedBooks> issuedBooksList = new ArrayList<>();
 
-	private final String UNIQUE_ID_FILE_NAME = "uniqueid.librarymanagement";
-	private final String ADMIN_FILE_NAME = "admin.librarymanagement";
-	private final String BOOK_FILE_NAME = "book.librarymanagement";
-	private final String CUSTOMER_FILE_NAME = "customer.librarymanagement";
-	private final String ISSUED_BOOK_FILE_NAME = "issuedbook.librarymanagement";
-	private final String LIBRARY_FILE_NAME = "library.librarymanagement";
+	private final String UNIQUE_ID_FILE_NAME = "uniqueid.json";
+	private final String ADMIN_FILE_NAME = "admin.json";
+	private final String BOOK_FILE_NAME = "book.json";
+	private final String CUSTOMER_FILE_NAME = "customer.json";
+	private final String ISSUED_BOOK_FILE_NAME = "issuedbook.json";
+	private final String LIBRARY_FILE_NAME = "library.json";
 
 	private LibraryDatabase() {
 		if (JsonSerializer.serialize().retrieveFromJson(UNIQUE_ID_FILE_NAME, UniqueId.class) != null) {
