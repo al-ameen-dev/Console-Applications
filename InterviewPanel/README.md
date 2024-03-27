@@ -30,7 +30,8 @@ Once the application is running, follow the on-screen instructions to log in wit
 - Select the appropriate option based on your role and follow the prompts to enter your credentials.
 - Ensure that you enter valid inputs as per the specified requirements for username/email and password.
 - Upon successful login, you will gain access to the respective functionalities based on your role within the interview management system.
-
+## Dependencies:
+This project requires the jackson java to store the data as json format in local file system. JSON file storage is used as data base for this application. We can download the jar files from the **Maven Central Repository**.
 ## Contributing:
 Contributions to the Interview Panel Application are welcome! If you encounter any bugs, have feature requests, or would like to contribute enhancements, feel free to open an issue or submit a pull request on the GitHub repository.
 
