@@ -20,7 +20,9 @@ The Library Management System is designed to streamline various administrative t
 - Depending on the selected option, users will be directed to perform specific tasks.
 - Input validation ensures that only valid inputs are accepted.
 - Users can log out securely using the "Logout" option.
-
+## Dependencies:
+This project requires the jackson java to store the data as json format in local file system. JSON file storage is used as data base for this application.
+We can download the jar files from the **Maven Central Repository**.
 ## Getting Started:
 To run the Library Management System, follow these steps:
 
