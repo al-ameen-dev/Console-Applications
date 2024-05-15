@@ -34,7 +34,6 @@ public class CustomerView {
 				case 4:cartView.showCart();break;
 				case 10:
 					break exit;
-					
 				default:System.out.println("Enter a valid option!");
 				}
 			} catch (InputMismatchException e) {

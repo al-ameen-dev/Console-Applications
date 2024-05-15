@@ -44,7 +44,7 @@ public class DishView {
 
 	public void showDishesTable(List<Dish> dishList) {
 		if (dishList.size() == 0) {
-			showAlert("Currently there are no dishes in hotel . Add some dishes!\n");
+			showAlert("Currently there are no dishes .\n");
 		} else {
 			System.out.printf("%n%-5s|%-15s|%-15s|%-15s%n", "Id", "Dish Name", "Dish Type", "Price");
 			for (Dish dish : dishList) {
@@ -56,7 +56,7 @@ public class DishView {
 
 	public void showHotelTable(List<Hotel> hotelList) {
 		if (hotelList.size() == 0) {
-			showAlert("Currently there are no hotels in your control . Add some Hotels!\n");
+			showAlert("Currently there are no hotels.\n");
 		} else {
 			System.out.printf("%n%-5s|%-15s|%-15s|%-15s|%-15s%n", "Id", "Hotel Name", "Dish Type", "Address",
 					"Phone No");

@@ -3,6 +3,8 @@ package com.alameendev.fooddeliveryapp.login;
 import java.util.InputMismatchException;
 import java.util.Scanner;
 
+import javax.swing.plaf.synth.SynthOptionPaneUI;
+
 import com.alameendev.fooddeliveryapp.FoodDelivery;
 
 public class LoginView {
@@ -14,7 +16,7 @@ public class LoginView {
 
 	public void init() {
 		FoodDelivery foodDelivery = FoodDelivery.getInstance();
-		String welcomeString = foodDelivery.getAppname()+"--------\nv--------"+foodDelivery.getAppname();
+		String welcomeString = foodDelivery.getAppname()+"--------\nv--------"+foodDelivery.getAppVersion();
 		String welcomeMessage = String.format("%n%s%n", welcomeString);
 		showAlert(welcomeMessage);
 		while (true) {
@@ -39,6 +41,10 @@ public class LoginView {
 		System.out.print("\nEnter the Details!:\n");
 		System.out.print("Enter the user name:");
 		String userName = scanner.nextLine();
+		if(!loginModel.isUser(userName)) {
+			showAlert("User name is already taken!\n");
+			return;
+		}
 		System.out.print("Enter the password:");
 		String password = scanner.next();
 		scanner.nextLine();
@@ -47,9 +53,13 @@ public class LoginView {
 		System.out.print("Enter the phone No:");
 		String phoneNo = scanner.next();
 		System.out.print("Choose the role:\n");
-		System.out.print("H.Hotel Admin U.User D.Delivery Boy !");
-		char role = scanner.next().charAt(0);
-		loginModel.createUser(userName,password,address,phoneNo,role);
+		System.out.print("H.Hotel Admin U.User D.Delivery Boy :");
+		char role = Character.toUpperCase(scanner.next().charAt(0));
+		if(role == 'D' || role == 'H' || role == 'U') {
+			loginModel.createUser(userName,password,address,phoneNo,role);
+		}else {
+			showAlert("Enter a valid role!\n");
+		}
 	}
 	
 	public void login() {

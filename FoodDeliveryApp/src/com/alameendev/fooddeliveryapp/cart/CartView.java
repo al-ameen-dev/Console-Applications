@@ -54,4 +54,9 @@ public class CartView {
 		System.out.print(alert);
 	}
 
+	public static void showOrders() {
+		// TODO Auto-generated method stub
+		
+	}
+
 }

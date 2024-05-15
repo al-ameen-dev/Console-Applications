@@ -32,9 +32,16 @@ public class LoginModel {
 	}
 
 	public void createUser(String userName, String password, String address, String phoneNo, char role) {
-		db.createUser(userName, password, address, phoneNo, role);
-		loginView.showAlert("User created successfully!");
-		loginView.init();
+			db.createUser(userName, password, address, phoneNo, role);
+			loginView.showAlert("User created successfully!");
+			loginView.init();
+	}
+
+	public boolean isUser(String userName) {
+		if(db.getUser(userName)) {
+			return true;
+		}
+		return false;
 	}
 
 }

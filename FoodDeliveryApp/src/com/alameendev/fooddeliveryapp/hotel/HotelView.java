@@ -38,7 +38,7 @@ public class HotelView {
 	
 	public void showHotelTable(List<Hotel> hotelList) {
 		if (hotelList.size() == 0) {
-			showAlert("Currently there are no hotels in your control . Add some Hotels!\n");
+			showAlert("Currently there are no hotels.\n");
 		} else {
 			System.out.printf("%n%-5s|%-15s|%-15s|%-15s|%-15s%n", "Id", "Hotel Name", "Dish Type",
 					"Address", "Phone No");
