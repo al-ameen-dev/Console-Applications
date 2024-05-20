@@ -3,7 +3,7 @@ package com.alameendev.librarymanagement.login;
 import com.alameendev.librarymanagement.db.DB_LABELS;
 import com.alameendev.librarymanagement.db.LibraryDatabase;
 
-public class LoginModel {
+class LoginModel {
 
 	private LoginView loginView;
 

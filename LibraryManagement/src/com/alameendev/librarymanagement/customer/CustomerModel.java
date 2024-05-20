@@ -6,7 +6,7 @@ import com.alameendev.librarymanagement.db.DB_LABELS;
 import com.alameendev.librarymanagement.db.LibraryDatabase;
 import com.alameendev.librarymanagement.model.Customer;
 
-public class CustomerModel {
+class CustomerModel {
 	private CustomerView customerView;
 
 	public CustomerModel(CustomerView customerView) {

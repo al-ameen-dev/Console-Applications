@@ -3,7 +3,7 @@ package com.alameendev.librarymanagement.admin;
 import com.alameendev.librarymanagement.db.LibraryDatabase;
 import com.alameendev.librarymanagement.model.Admin;
 
-public class AdminModel {
+class AdminModel {
 
     private AdminView adminView;
     public AdminModel(AdminView adminView) {

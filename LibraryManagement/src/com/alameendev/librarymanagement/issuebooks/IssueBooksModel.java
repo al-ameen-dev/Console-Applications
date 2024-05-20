@@ -10,7 +10,7 @@ import com.alameendev.librarymanagement.db.DB_LABELS;
 import com.alameendev.librarymanagement.db.LibraryDatabase;
 import com.alameendev.librarymanagement.model.IssuedBooks;
 
-public class IssueBooksModel {
+class IssueBooksModel {
 
 	private IssueBooksView issueBooksView;
 

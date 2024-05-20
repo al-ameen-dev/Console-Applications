@@ -6,7 +6,7 @@ import com.alameendev.interviewpanel.db.DB_LABELS;
 import com.alameendev.interviewpanel.db.InterviewDatabase;
 import com.alameendev.interviewpanel.model.Candidate;
 
-public class HrModel {
+class HrModel {
 
 	private HrView hrView;
 	private InterviewDatabase db;
@@ -69,12 +69,14 @@ public class HrModel {
 
 			for (Candidate cnd : InterviewDatabase.getInstance().hrQueue()) {
 				if (first) {
-					System.out.printf("Id : %-3d - Name : %-3s - email : %-3ss (ongoing interview)%n", cnd.getId(),
+					String str = String.format("Id : %-3d - Name : %-3s - email : %-3ss (ongoing interview)%n", cnd.getId(),
 							cnd.getName(), cnd.getEmail());
+					hrView.showAlert(str);
 					first = false;
 				} else {
-					System.out.printf("Id : %-3d - Name : %-3s - email : %-3s (waiting for interview)%n", cnd.getId(),
+					String str = String.format("Id : %-3d - Name : %-3s - email : %-3s (waiting for interview)%n",cnd.getId(),
 							cnd.getName(), cnd.getEmail());
+					hrView.showAlert(str);
 				}
 			}
 		} else {

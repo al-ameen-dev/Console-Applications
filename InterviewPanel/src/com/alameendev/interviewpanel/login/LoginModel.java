@@ -11,7 +11,7 @@ import com.alameendev.interviewpanel.model.Admin;
 import com.alameendev.interviewpanel.model.Receptionist;
 import com.alameendev.interviewpanel.receptionist.ReceptionistView;
 
-public class LoginModel {
+class LoginModel {
 
 	private LoginView loginView;
 	private AdminView adminView;

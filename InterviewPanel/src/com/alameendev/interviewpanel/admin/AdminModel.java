@@ -5,7 +5,7 @@ import com.alameendev.interviewpanel.model.Admin;
 import com.alameendev.interviewpanel.model.Hr;
 import com.alameendev.interviewpanel.model.Receptionist;
 
-public class AdminModel {
+class AdminModel {
 
 	private AdminView adminView;
 	private InterviewDatabase db;

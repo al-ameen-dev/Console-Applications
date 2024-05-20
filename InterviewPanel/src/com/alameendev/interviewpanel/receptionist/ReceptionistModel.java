@@ -8,7 +8,7 @@ import com.alameendev.interviewpanel.model.Candidate;
 import com.alameendev.interviewpanel.model.Hr;
 import com.alameendev.interviewpanel.model.Receptionist;
 
-public class ReceptionistModel {
+class ReceptionistModel {
 
 	private ReceptionistView receptionistview;
 	private InterviewDatabase db;
